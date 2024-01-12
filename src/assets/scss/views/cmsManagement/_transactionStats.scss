@@ -1,0 +1,105 @@
+.transaction-card {
+  overflow: hidden;
+  border: none;
+  box-shadow: 10px 10px 20px 0px #acacac54;
+  margin-bottom: 15px;
+  background: var(--boxes-color);
+
+  .transaction-card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .up-transaction-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 15px;
+
+      .transaction-title,
+      .transaction-total-money,
+      .transaction-total-request {
+        font-family: 'Helvetica-Bold';
+        font-weight: 700;
+        color: var(--white-color);
+        margin: 2px 0;
+      }
+      .transaction-title {
+        font-size: 14px;
+      }
+      .transaction-total-money {
+        font-size: 18px;
+      }
+      .transaction-total-request {
+        font-size: 12px;
+        font-family: 'Helvetica-Regular';
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .transaction-card-color-1,
+    .transaction-card-color-4 {
+      background: linear-gradient(310deg, #b1ffb9, #1bba15);
+    }
+    .transaction-card-color-2,
+    .transaction-card-color-5 {
+      background: linear-gradient(310deg, #fffb79, #ff9b32);
+    }
+    .transaction-card-color-3,
+    .transaction-card-color-6 {
+      background: linear-gradient(310deg, #ff8888, #fc4949);
+    }
+
+    .down-transaction-card-body {
+      padding: 15px 15px;
+
+      .transaction-time,
+      .transaction-amount,
+      .transaction-request {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Helvetica-Regular';
+        font-weight: 400;
+        color: var(--text-color);
+        margin: 4px 0;
+      }
+
+      .transaction-amount {
+        font-family: 'Helvetica-Bold';
+        font-weight: 700;
+      }
+
+      .transaction-request {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        color: var(--error-color);
+      }
+    }
+  }
+}
+
+body.dark {
+  .transaction-card {
+    box-shadow: 10px 10px 20px 0px rgb(77 77 77 / 31%);
+
+    .transaction-card-body {
+      .transaction-card-color-1,
+      .transaction-card-color-4 {
+        background: linear-gradient(310deg, #517655, #12720f);
+      }
+      .transaction-card-color-2,
+      .transaction-card-color-5 {
+        background: linear-gradient(310deg, #bfbd63, #a56019);
+      }
+      .transaction-card-color-3,
+      .transaction-card-color-6 {
+        background: linear-gradient(310deg, #c14747, #8e3a3a);
+      }
+    }
+  }
+}
+

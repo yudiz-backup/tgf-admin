@@ -1,0 +1,41 @@
+.data-table {
+    .table-responsive-xl {
+        table {
+            td {
+                span.verified {
+                    svg {
+                        color: rgb(156, 204, 101);
+                    }
+                }
+
+                span.not-verified {
+                    svg {
+                        color: rgb(255, 82, 82);
+                    }
+                }
+
+            }
+
+            .single-line {
+                text-wrap: nowrap;
+            }
+
+            .dropdown-datatable-menu {
+
+                .edit:hover,
+                .icon-create:hover {
+                    color: rgb(241, 153, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+.react-datepicker__month-container {
+    .react-datepicker__header__dropdown {
+        .react-datepicker__year-read-view {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+    }
+}

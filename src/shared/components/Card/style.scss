@@ -1,0 +1,292 @@
+@import '../../../assets/scss/helper/variables';
+
+.dash-card {
+  background-color: var(--boxes-color);
+  border: none;
+  display: flex;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 6px 6px 20px 0px #9cb5d861;
+  padding: 24px;
+  transition: 0.3s ease-in-out;
+
+  .line {
+    // height: 5px;
+    width: 1px;
+    background-color: aliceblue;
+  }
+
+  &:hover {
+    box-shadow: 6px 6px 20px 0px #9cb5d8a6;
+  }
+
+  .card-body {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .card-text {
+      color: var(--secondary-700);
+      border-radius: 4px;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Helvetica-Bold';
+    }
+
+    .card-title {
+      margin: 10px 0 0 0 !important;
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Lato', sans-serif;
+    }
+
+    svg {
+      color: white;
+      background: black;
+      width: 22px;
+      height: 22px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+.dash-card2 {
+  background-color: var(--boxes-color);
+  border: none;
+  display: flex;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px 0px #9cb5d861;
+  padding: 24px;
+  transition: 0.3s ease-in-out;
+
+  .line {
+    height: .5px;
+    width: 100%;
+    background-color: var(--line-color);
+  }
+
+  &:hover {
+    box-shadow: 6px 6px 20px 0px #9cb5d8a6;
+  }
+
+  .card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+      color: var(--secondary-text-color);
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+
+    .greenChip {
+      margin: 0 auto;
+      padding: 2px 5px;
+      border-radius: 5px;
+      width: fit-content;
+      background: rgba(156, 204, 101, 0.2);
+      border-color: #e3f1d4;
+      color: #9ccc65;
+    }
+
+    .redChip {
+      margin: 0 auto;
+      padding: 2px 5px;
+      border-radius: 5px;
+      width: fit-content;
+      background: rgba(255, 82, 82, 0.2);
+      border-color: #ffcfcf;
+      color: #ff5252;
+    }
+
+    .blueChip {
+      margin: 0 auto;
+      padding: 2px 5px;
+      border-radius: 5px;
+      width: fit-content;
+      background: rgba(70, 128, 255, 0.2);
+      border-color: #cbdbff;
+      color: #4680ff;
+    }
+
+    .yelloChip {
+      margin: 0 auto;
+      padding: 2px 5px;
+      border-radius: 5px;
+      width: fit-content;
+      background: rgba(255, 186, 87, 0.2);
+      border-color: #ffecd0;
+      color: #ffba57;
+    }
+
+    .card-text {
+      color: var(--secondary-700);
+      border-radius: 4px;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Helvetica-Bold';
+    }
+
+    .card-title {
+      // margin: 10px 0 0 0 !important;
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Lato', sans-serif;
+    }
+
+    svg {
+      color: white;
+      background: black;
+      width: 20px;
+      height: 20px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.dashIcons-2 {
+  svg {
+    font-size: 5px !important;
+    background-color: transparent !important;
+    padding: 0 0 5px 0 !important;
+  }
+
+  svg.Icon1 {
+    color: #9ccc65;
+  }
+
+  svg.Icon2 {
+    color: #ffba57;
+  }
+
+  svg.Icon3 {
+    color: #ff5252;
+  }
+
+  svg.Icon4 {
+    color: #9ccc65;
+  }
+
+  svg.Icon5 {
+    color: #9ccc65;
+  }
+
+  svg.Icon6 {
+    color: #9ccc65;
+  }
+}
+
+body.dark {
+  .dashboard-card-1 {
+    .dash-card {
+      .down-card-1 {
+        background: linear-gradient(130deg, #1f9aa9, #00006f) !important;
+      }
+    }
+  }
+
+  .dash-card {
+    box-shadow: 6px 6px 20px 0px rgb(156 181 216 / 8%);
+
+    &:hover {
+      box-shadow: 6px 6px 20px 0px rgb(156 181 216 / 17%);
+    }
+
+    .card-body {
+      .card-title {
+        color: var(--secondary-400);
+      }
+
+      .card-text {
+        color: var(--secondary-300);
+      }
+    }
+  }
+}
+
+.dashIcons-3 {
+  svg {
+    font-size: 16px !important;
+    background-color: transparent !important;
+    padding: 0 8px 3px 0 !important;
+
+  }
+
+  svg.green {
+    color: #9ccc65 !important;
+  }
+
+  svg.Icon2 {
+    color: #02418d !important;
+  }
+
+  svg.yellow {
+    color: #ffba57 !important;
+  }
+
+  svg.red {
+    color: #ff5252 !important;
+  }
+
+}
+
+.dash-card3 {
+  background-color: var(--boxes-color);
+  border: none;
+  display: flex;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px 0px #9cb5d861;
+  padding: 24px;
+  transition: 0.3s ease-in-out;
+
+  .line {
+    height: .5px;
+    width: 100%;
+    background-color: var(--line-color);
+  }
+
+  &:hover {
+    box-shadow: 6px 6px 20px 0px #9cb5d8a6;
+  }
+
+  .card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+      color: var(--secondary-text-color);
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+
+
+    .card-title {
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      color: white;
+      background: black;
+      width: 20px;
+      height: 20px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}

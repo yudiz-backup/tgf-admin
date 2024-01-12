@@ -1,0 +1,93 @@
+.bouns-bar {
+    box-shadow: 6px 6px 20px 0px rgba(156, 181, 216, 0.38);
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    .bonus-card-main {
+        position: relative;
+        height: max-content;
+        padding: 0;
+
+        .bonus-card {
+            border: none;
+            width: 100%;
+            border-radius: 0;
+            padding: 20px;
+
+            .bonus-card-body {
+                padding: 0;
+
+                .bonus-card-header {
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    width: 100%;
+                    gap: 15px;
+
+                    .bonus-card-icon svg {
+                        width: 22px;
+                        height: 22px;
+                        display: grid;
+                        place-content: center;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 15px;
+                    }
+
+                    .bonus-card-icon svg.bonus-user-icon {
+                        background: linear-gradient(310deg, #1171ef, #11cdef);
+                    }
+
+                    .bonus-card-icon svg.bonus-bot-icon {
+                        background: linear-gradient(310deg, #f5365c, #f56036);
+                    }
+
+                    .bonus-card-icon svg.bonus-balance-icon {
+                        background: linear-gradient(310deg, #2dce89, #2dcecc);
+                    }
+
+                    .bonus-card-icon svg.bonus-game-table-icon {
+                        background: linear-gradient(310deg, #fb6340, #fbb140);
+                    }
+
+                    .bonus-card-icon svg.bonus-transaction-icon {
+                        background: linear-gradient(310deg, #688bff, #dc66e0);
+                    }
+
+                    .bonus-card-icon svg.bonus-profit-icon {
+                        background: linear-gradient(310deg, #2dce89, #2dcecc);
+                    }
+
+                    .bonus-card-icon svg.bonus-tds-icon {
+                        background: linear-gradient(310deg, #ff6c9a, #d75eff);
+                    }
+
+                    .bonus-card-title-group {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        font-size: 17px;
+                        font-family: 'helvetica-bold';
+                        color: var(--secondary-text-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+body.dark {
+    .bonus-card-main {
+        background-color: var(--boxes-color);
+        border-radius: 8px;
+        position: relative;
+        height: max-content;
+
+        .bonus-card {
+            background-color: var(--boxes-color);
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.statistics-card {
+  border: none;
+  box-shadow: 10px 10px 20px 0px rgba(172, 172, 172, 0.3294117647);
+  padding: 20px;
+  background: var(--boxes-color);
+
+  .statistics-card-body {
+    padding: 0;
+    table {
+      margin-top: 11px;
+      margin-bottom: 0;
+    }
+    td {
+      border: none;
+      padding: 3px 0;
+      font-size: 14px;
+      font-family: 'helvetica-regular';
+      font-weight: 400;
+      color: var(--text-color);
+    }
+
+    .statistics-card-header {
+      display: flex;
+      align-items: center;
+      color: black;
+      margin-bottom: 15px;
+      width: 100%;
+      gap: 15px;
+      padding-bottom: 11px;
+      border-bottom: 2px solid var(--secondary-300);
+
+      .statistics-card-icon svg {
+        width: 22px;
+        height: 22px;
+        display: grid;
+        place-content: center;
+        color: white;
+        border-radius: 50%;
+        padding: 12px;
+      }
+
+      .statistics-card-icon svg.statistics-user-icon {
+        background: linear-gradient(310deg, #1171ef, #11cdef);
+      }
+      .statistics-card-icon svg.statistics-bot-icon {
+        background: linear-gradient(310deg, #f5365c, #f56036);
+      }
+      .statistics-card-icon svg.statistics-balance-icon {
+        background: linear-gradient(310deg, #2dce89, #2dcecc);
+      }
+      .statistics-card-icon svg.statistics-game-table-icon {
+        background: linear-gradient(310deg, #fb6340, #fbb140);
+      }
+      .statistics-card-icon svg.statistics-transaction-icon {
+        background: linear-gradient(310deg, #688bff, #dc66e0);
+      }
+      .statistics-card-icon svg.statistics-profit-icon {
+        background: linear-gradient(310deg, #2dce89, #2dcecc);
+      }
+      .statistics-card-icon svg.statistics-tds-icon {
+        background: linear-gradient(310deg, #ff6c9a, #d75eff);
+      }
+
+      .statistics-card-title-group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'helvetica-bold';
+        color: var(--secondary-text-color);
+      }
+    }
+
+    .statistics-data-table {
+      tbody {
+        th {
+          border: none;
+          border-top: 1px solid var(--secondary-400);
+          font-size: 14px;
+          font-family: 'helvetica-bold';
+          font-weight: 700;
+          text-align: center;
+          color: var(--text-color);
+        }
+        td {
+          text-align: center;
+        }
+      }
+
+      thead {
+        th {
+          background: var(--primary-color-light);
+          font-size: 14px;
+          font-family: 'helvetica-bold';
+          font-weight: 700;
+          color: var(--text-color);
+          border-color: var(--secondary-300);
+          text-align: center;
+        }
+      }
+    }
+
+    .statistics-card-table-data {
+      th {
+        border-bottom: 0;
+        border-top: 1px solid var(--secondary-400);
+        text-align: left;
+        padding: 5px 0 2px;
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+      td {
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+      tr {
+        border: none;
+        font-size: 15px;
+        font-family: 'helvetica-bold';
+        font-weight: 700;
+        color: var(--text-color);
+        span {
+          font-family: 'helvetica-regular';
+          font-weight: 400;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
+body.dark {
+  .statistics-card {
+    box-shadow: 0px 0px 20px 0px rgb(172 172 172 / 15%);
+    .statistics-card-body {
+      td {
+        color: var(--secondary-400);
+      }
+      .statistics-card-header {
+        border-bottom: 2px solid var(--secondary-700);
+      }
+    }
+  }
+}

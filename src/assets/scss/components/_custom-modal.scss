@@ -1,0 +1,16 @@
+.common-modal {
+  margin: 0 auto !important;
+  --bs-modal-margin: 0 auto !important;
+  form {
+    .form-label {
+      color: var(--text-color);
+      text-align: left;
+      width: 100%;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      line-height: 1.83;
+      margin-bottom: 8px;
+    }
+  }
+}

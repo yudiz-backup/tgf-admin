@@ -1,0 +1,70 @@
+// Helper
+@import './helper/variables';
+@import './helper/font';
+@import './helper/media-queries';
+@import './helper/icon-moon';
+@import './helper/container';
+@import './helper/scrollbar';
+@import './helper/mixin';
+
+//Theme
+@import './theme';
+
+// Components
+@import './components/button';
+@import './components/inputs';
+@import './components/header';
+@import './components/dropdown';
+@import './components/sidebar';
+@import './components/breadcrumbs';
+@import './components/top-bar';
+@import './components/drawer';
+@import './components/radio-checkbox-input';
+@import './components/data-table';
+@import './components/pagination';
+@import './components/react-select';
+@import './components/modal';
+@import './components/react-datepicker';
+@import './components/upload-media';
+@import './components/custom-modal';
+@import './components/not-found';
+@import './components/statistics-card';
+@import './components/tooltips';
+@import './components/userKYCDetail';
+
+// Layouts
+@import './views/auth/auth';
+@import './views/main-layout/main-layout';
+
+// pages
+@import './views/auth/login';
+@import './views/cmsManagement/dashboard';
+@import './views/cmsManagement/statistic';
+@import './views/edit-profile/edit-profile';
+@import './views/login';
+@import './views/feature-management/feature-management';
+@import './views/admin/edit-admin';
+@import './views/user/user';
+@import './views/user/viewUser/userDetail';
+@import './views/bot/bot';
+@import './views/kyc/kyc';
+@import './views/notification/notification';
+@import './views/tournament/ticket/ticket';
+@import './views/tournament/prototype/addPrototype/addPrototype';
+@import './views/tournament/prototype/viewPrototype/viewPrototype';
+@import './views/tournament/schedule/schedule';
+@import './views/poker/NLHManagement/nlhManagement';
+@import './views/helpDesk/helpDesk';
+@import './views/helpDesk/report/reportManagement';
+@import './views/helpDesk/report/editReport/editReport';
+@import './views/helpDesk/banner/banner';
+@import './views/finance/transaction/transaction';
+@import './views/logs-management/gameLogs/viewGameLogs/viewGameLogs';
+@import './views/finance/withdrawal/withdrawal';
+@import './views/logs-management/gameLogs/gameLogs';
+@import './views/tournament/prototype/prototype';
+@import './views/promotion/store';
+@import './views/settings/settings';
+
+// New Color Varibles
+@import './helper/new_variables';

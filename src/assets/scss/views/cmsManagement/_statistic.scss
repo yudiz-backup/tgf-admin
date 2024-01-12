@@ -1,0 +1,39 @@
+.table-title {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: black;
+    letter-spacing: 0.2mm;
+
+    .credited {
+        color:#2a9e2a;
+    }
+
+    .debited {
+        color: #fe1c1cdc;
+    }
+
+    .profit {
+        color: var(--primary-color);
+    }
+}
+
+body.dark {
+    .table-title {
+        font-size: 18px;
+        padding-bottom: 10px;
+        color: white;
+        letter-spacing: 0.2mm;
+
+        .credited {
+            color:#2a9e2a;
+        }
+    
+        .debited {
+            color: #c11717e5;
+        }
+    
+        .profit {
+            color: var(--secondary-500);
+        }
+    }
+}

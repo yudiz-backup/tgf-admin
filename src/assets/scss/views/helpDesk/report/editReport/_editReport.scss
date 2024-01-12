@@ -1,0 +1,58 @@
+.chat {
+    .report-discussion {
+        overflow: hidden;
+        height: 300px;
+        overflow-y: auto;
+
+        .empty-msg {
+            color: var(--text-color);
+            position: relative;
+            top: 10px;
+        }
+
+        .report-comment-user {
+            padding: 10px;
+            color: var(--text-color);
+            text-align: center;
+
+            svg {
+                font-size: 24px;
+            }
+
+            .report-comment-user-name {
+                font-size: 12px;
+            }
+        }
+
+        .report-comment-message {
+            background-color: var(--primary-color);
+            color: var(--secondary-100);
+            width: fit-content;
+            padding: 7px 15px;
+            font-size: 12px;
+            position: relative;
+            border-radius: 5px;
+            margin: 10px 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -8px;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid var(--primary-color);
+                z-index: 1;
+            }
+        }
+
+        .report-comment-state,
+        .report-comment-date {
+            font-size: 12px;
+            color: var(--text-color);
+            text-transform: capitalize;
+        }
+    }
+}

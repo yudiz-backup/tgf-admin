@@ -1,0 +1,15 @@
+.data-table {
+    .table-responsive-xl {
+        table {
+            .dropdown-datatable-menu {
+                .schedule-item:hover, .icon-refresh:hover {
+                    color: #057ac0 !important;
+                }
+
+                .view-item:hover, .icon-view:hover {
+                    color: #21bb21 !important;
+                }
+            }
+        }
+    }
+}

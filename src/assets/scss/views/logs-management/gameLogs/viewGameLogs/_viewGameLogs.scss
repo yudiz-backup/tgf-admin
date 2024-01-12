@@ -1,0 +1,566 @@
+.wrapper {
+    .title {
+        color: var(--text-color);
+        letter-spacing: 1px;
+    }
+
+    .live-profile {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem !important;
+        gap: 50px 0;
+
+        .wrapper {
+            max-width: 90%;
+
+            .live-game-profile {
+                .inner-content {
+                    width: 100%;
+
+                    .state {
+                        .success {
+                            background-color: #2a9e2a;
+                            padding: 5px 8px;
+                            font-family: 'helvetica-bold';
+                            font-size: 8.5px;
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .profile {
+                        border: 2px solid var(--text-color);
+                        width: 80px;
+                        height: 80px;
+                        display: grid;
+                        margin: 5px auto;
+                        place-items: center;
+                        padding: 0px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 35px;
+                        top: -35px;
+                        background-color: var(--secondary-200);
+
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+
+                    .user-name {
+                        text-align: center;
+                        margin-top: 20px;
+                        word-wrap: break-word;
+
+                        h2 {
+                            color: var(--text-color) !important;
+                            margin: 0;
+                            text-transform: capitalize;
+
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 1.8px;
+                                background-color: var(--secondary-300);
+                                position: relative;
+                                top: -5px;
+                                margin-bottom: 10px;
+                                overflow: hidden;
+                            }
+                        }
+
+                        span {
+                            color: var(--secondary-400)
+                        }
+                    }
+
+                    .current-user-turn {
+                        color: #f4355d;
+                        text-align: center;
+                        font-family: 'helvetica-bold';
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                    }
+
+                    .cards {
+                        text-align: center;
+                        color: var(--secondary-400);
+
+                        h3 {
+                            font-size: 16px;
+                            color: var(--secondary-500);
+                            font-family: 'helvetica-bold';
+                        }
+
+                        .user-cards {
+                            padding: 2px;
+                            background-color: var(--secondary-100);
+                            border-radius: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            .poker-card {
+                                padding: 10px;
+
+                                img {
+                                    width: 60px;
+                                }
+                            }
+                        }
+                    }
+
+                    .user-pot {
+                        text-align: center;
+                        margin-top: 10px;
+
+                        h3 {
+                            font-size: 16px;
+                            color: var(--secondary-500);
+                            font-family: 'helvetica-bold';
+                        }
+
+                        .label {
+                            display: flex;
+                        }
+
+                        .value {
+                            display: flex;
+                            justify-content: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .view-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .live {
+            color: #ce2929;
+            border: 2px solid #ce2929;
+            padding: 3px 5px;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-family: 'helvetica-bold';
+            letter-spacing: 1px;
+            position: relative;
+            top: -5px;
+        }
+
+        h2 {
+            letter-spacing: 1px;
+            color: var(--text-color);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            float: inline-end;
+            align-items: center;
+            margin-bottom: 10px;
+
+            button {
+                padding: 0;
+
+                svg {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .current-page {
+            font-size: 18px;
+            font-family: 'helvetica-bold';
+            color: var(--primary-color);
+            border: 1px solid var(--secondary-200);
+            padding: 0px 8px;
+            border-radius: 5px;
+            background-color:  var(--secondary-200);
+            box-shadow: inset 1px 1px 10px var(--secondary-400);
+        }
+    }
+
+    .transaction-details-button-group {
+        vertical-align: bottom;
+        display: flex;
+        flex-wrap: wrap;
+        // width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding: 0 15px;
+
+        button {
+            text-wrap: nowrap;
+            background-color: transparent;
+            color: var(--text-color);
+            font-size: 14px;
+            flex-grow: 1;
+            flex-basis: 200;
+            min-width: 10px;
+            max-width: 160px;
+            border: none;
+            padding: 8px 5px;
+            padding-bottom: 3px;
+            position: relative;
+            font-family: 'helvetica-regular';
+            font-weight: 400;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0%;
+                height: 3px;
+                background: var(--primary-color);
+                transition: 0.3s ease-in-out;
+            }
+
+            &.userActive::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                background: var(--primary-color);
+            }
+        }
+    }
+
+    .user-basic-lower {
+        margin-top: 20px;
+
+        .spect {
+            .card-box {
+                .dash-card {
+                    padding: 15px 25px;
+
+                    .card-body {
+                        .card-text {
+                            font-size: 20px;
+                            margin-bottom: 5px;
+                            text-transform: capitalize;
+                        }
+
+                        .card-title {
+                            color: var(--secondary-400);
+                            font-size: 15px;
+                        }
+
+                        svg {
+                            width: 23px;
+                            height: 23px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .table-logs {
+            .wrapper {
+                padding: 18px 25px;
+
+                h3 {
+                    letter-spacing: 1px;
+                    color: var(--text-color);
+                    text-transform: uppercase;
+                }
+
+                .player-card {
+                    span {
+                        color: var(--text-color);
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .link {
+                        color: var(--primary-color);
+                        font-family: 'helvetica-bold';
+                        letter-spacing: 1px;
+                        font-size: 15px;
+                        cursor: pointer;
+                        margin-top: 5px;
+                    }
+
+                    .card-value {
+                        color: var(--secondary-500);
+                        font-family: 'helvetica-bold';
+                        letter-spacing: 1px;
+                        font-size: 15px;
+                        text-wrap: nowrap;
+                        margin-top: 5px;
+                    }
+
+                    .card-header {
+                        text-wrap: nowrap;
+                        font-family: 'helvetica-regular';
+                        color: var(--secondary-400);
+                        letter-spacing: 1px;
+                        font-size: 12.65px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .player-detail {
+                    width: 100%;
+                    display: block;
+                    margin-top: 10px;
+
+                    .left-side {
+                        .profile_icon {
+                            overflow: hidden;
+                            border: 2px solid var(--text-color);
+                            width: 70px;
+                            height: 70px;
+                            display: grid;
+                            margin: 5px auto;
+                            place-items: center;
+                            border-radius: 50%;
+                            position: relative;
+                            padding: 5px;
+
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+
+                        .player-state {
+                            text-align: center;
+                            margin-top: 10px;
+
+                            span {
+                                font-size: 11px;
+                                text-transform: capitalize;
+                                color: var(--white-color);
+                                padding: 5px 8px;
+                                border-radius: 5px;
+                                background-color: #2a9e2a;
+                                font-family: 'helvetica-regular';
+                                letter-spacing: 0.5px;
+                            }
+                        }
+
+                        .left {
+                            span {
+                                font-size: 11px;
+                                text-transform: capitalize;
+                                color: var(--white-color);
+                                padding: 5px 8px;
+                                border-radius: 5px;
+                                background-color: #2a759e;
+                                font-family: 'helvetica-regular';
+                                letter-spacing: 0.5px;
+                            }
+                        }
+                    }
+
+                    .right-side {
+                        width: 100%;
+
+                        h2,
+                        p {
+                            color: var(--text-color);
+                            text-transform: capitalize;
+                            font-family: 'helvetica-regular';
+                            letter-spacing: 1px;
+                            margin: 0;
+                            word-break: break-all;
+                        }
+
+                        p {
+                            color: var(--secondary-500);
+                            font-size: 12px;
+
+                            span.card-value {
+                                font-size: 13px;
+                                color: var(--secondary-600);
+                                font-family: 'helvetica-bold';
+
+                                .status {
+                                    background-color: #2a9e2a;
+                                    color: var(--white-color);
+                                    padding: 4px 6px;
+                                    letter-spacing: 1px;
+                                    text-align: center;
+                                    font-size: 10px;
+                                    font-family: 'helvetica-regular';
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+
+                        .card-detail {
+                            padding: 10px;
+                            background-color: var(--secondary-100);
+                            border-radius: 5px;
+                            margin-top: 10px;
+
+
+                            .card-view {
+                                display: block;
+
+                                .card-header {
+                                    display: block;
+                                    text-align: left;
+                                    padding: 0 5px;
+                                    color: var(--secondary-500);
+                                    font-family: 'helvetica-bold';
+                                    text-transform: uppercase;
+                                }
+
+                                .poker-card {
+                                    padding: 3px;
+                                    overflow: hidden;
+                                    outline: 1px transparent;
+
+                                    img {
+                                        width: 50px;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.dark {
+    .live-profile {
+        .wrapper {
+            .live-game-profile {
+                .inner-content {
+                    .profile {
+                        border: 2px solid var(--secondary-500);
+                        background-color: var(--secondary-800);
+                    }
+
+                    .user-name {
+                        h2 {
+                            color: var(--secondary-200) !important;
+
+                            &::before {
+                                background-color: var(--secondary-500);
+                            }
+                        }
+
+                        span {
+                            color: var(--secondary-400)
+                        }
+                    }
+
+                    .cards {
+                        // color: var(--secondary-100);
+
+                        h3 {
+                            color: var(--secondary-300);
+                        }
+
+                        .user-cards {
+                            background-color: var(--secondary-500);
+                        }
+                    }
+
+                    .user-pot {
+                        h3 {
+                            color: var(--secondary-300);
+                        }
+
+                        .label {
+                            color: var(--secondary-200);
+                        }
+
+                        .value {
+                            color: var(--secondary-400);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .view-header {
+        .buttons {
+            button {
+                color: var(--secondary-300);
+                padding: 0;
+            }
+        }
+
+        .current-page {
+            font-size: 18px;
+            font-family: 'helvetica-bold';
+            color: var(--primary-color);
+            border: 1px solid var(--secondary-400);
+            padding: 0px 8px;
+            border-radius: 5px;
+            background-color:  var(--secondary-400);
+            box-shadow: inset 1px 1px 10px var(--secondary-500);
+        }
+    }
+
+    .table-logs {
+        .wrapper {
+            .player-card {
+                span.card-value {
+                    color: var(--secondary-300) !important;
+                }
+
+                .card-header {
+                    text-wrap: nowrap;
+                    font-family: 'helvetica-regular';
+                    color: var(--secondary-400);
+                    letter-spacing: 1px;
+                    font-size: 12.65px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+            }
+
+            .player-detail {
+                .left-side {
+                    .profile_icon {
+                        border: 2px solid var(--secondary-600) !important;
+                        background-color: var(--secondary-800);
+                    }
+                }
+
+                .right-side {
+                    p {
+                        color: var(--secondary-400) !important;
+
+                        span.card-value {
+                            color: var(--secondary-300) !important;
+                        }
+                    }
+
+                    .card-detail {
+                        background-color: var(--secondary-500) !important;
+
+                        .card-view {
+                            .card-header {
+                                color: var(--secondary-300) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

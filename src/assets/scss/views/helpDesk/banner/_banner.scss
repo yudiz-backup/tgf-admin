@@ -1,0 +1,181 @@
+.data-table {
+    .table-responsive-xl {
+        table {
+            img {
+                width: 80px !important;
+                height: 80px !important;
+                object-fit: contain;
+            }
+
+            svg.user-svg {
+                font-size: 40px;
+                color: var(--secondary-400);
+                border: 1px solid var(--secondary-300);
+                padding: 15px 20px;
+                cursor: pointer;
+            }
+
+            .dropdown-datatable {
+                .dropdown-datatable-menu {
+                    .view:hover, .icon-visibility:hover {
+                        color: #21bb21 !important;
+                    }
+
+                    .delete:hover, .icon-delete:hover {
+                        color: red !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#add-banner {
+    .modal-header {
+        padding: 20px 35px;
+
+        .add-banner-header {
+            width: 100%;
+            color: var(--text-color);
+        }
+
+        .add-banner-header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--secondary-300);
+            position: relative;
+        }
+    }
+
+    .modal-body {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .form-group {
+            margin: 0;
+        }
+
+        .form-group,
+        .banner {
+            color: var(--text-color);
+            text-align: start;
+        }
+    }
+
+    .modal-footer {
+        margin: 0;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+#view-banner {
+    .modal-header {
+        padding: 20px 35px;
+
+        .add-banner-header {
+            width: 100%;
+            color: var(--text-color);
+        }
+
+        .add-banner-header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--secondary-300);
+            position: relative;
+        }
+
+        button {
+            color: red;
+        }
+    }
+
+    .modal-body {
+        padding-top: 0;
+        padding-bottom: 10px;
+
+        h3 {
+            text-align: start;
+            margin: 10px 10px;
+            margin-bottom: 0;
+            padding: 0 10px;
+            font-family: 'helvetica-regular';
+            text-transform: uppercase !important;
+        }
+
+        .design {
+            h3 {
+                font-family: 'helvetica-regular';
+                text-transform: uppercase !important;
+                font-weight: 500;
+                text-transform: none;
+                font-size: 15px;
+                margin: 0 10px;
+            }
+
+            span {
+                font-family: 'helvetica-bold';
+                text-transform: capitalize;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 40px;
+                font-size: 15px;
+                color: var(--text-color);
+            }
+        }
+
+        .banner-preview-group {
+            svg {
+                font-size: 150px;
+                border: 1px solid var(--secondary-300);
+                padding: 20px 30px;
+                margin: 10px 20px;
+                text-align: start;
+                display: block;
+            }
+
+            h3 {
+                text-align: start;
+                margin: 10px 10px;
+                margin-bottom: 0;
+                padding: 0 10px;
+                font-weight: 500;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+
+            .document-preview {
+                width: 95%;
+
+                img {
+                    border-radius: 0 20px;
+                    width: 90% !important;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .modal-footer {
+        position: relative;
+        bottom: 20px;
+        align-self: flex-start;
+        padding-left: 45px;
+
+        button {
+            padding: 5px 10px;
+        }
+
+        button:hover {
+            border-color: var(--text-color);
+        }
+    }
+}

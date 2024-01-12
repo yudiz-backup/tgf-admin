@@ -1,0 +1,88 @@
+.data-table {
+    .table-responsive-xl {
+        table {
+            thead {
+                span {
+                    text-wrap: nowrap;
+                }
+            }
+            td {
+                span.warning {
+                    background-color: #ffb338e5;
+                    text-transform: capitalize;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                    font-size: 12px;
+                }
+
+                span.success {
+                    background-color: #6df524;
+                    text-transform: capitalize;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                    font-size: 12px;
+                }
+
+                span.danger {
+                    background-color: #fe1c1cdc !important;
+                    border-color: #fe1c1cdc !important;
+                    text-transform: capitalize;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+            .single-line {
+                text-wrap: nowrap;
+            }
+
+            .transaction-view {
+                i {
+                    font-size: 20px;
+                    transition: 0.3s ease-in-out;
+                }
+                i:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+body.dark {
+    .data-table {
+        .table-responsive-xl {
+            table {
+                td {
+                    span.warning {
+                        background-color: #d38a15;
+                    }
+
+                    span.success {
+                        background-color: #44c100;
+                    }
+    
+                    span.danger {
+                        background-color: #c11717e5 !important;
+                        border-color: #c11717e5 !important;
+                    }
+                }
+                .single-line {
+                    text-wrap: nowrap;
+                }
+            }
+        }
+    }
+}

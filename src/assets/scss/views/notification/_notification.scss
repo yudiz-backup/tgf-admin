@@ -1,0 +1,196 @@
+.data-table {
+    .table-responsive-xl {
+        table {
+            thead {
+                span {
+                    text-wrap: nowrap;
+                }
+            }
+            td {
+                text-transform: capitalize;
+                
+                span.warning {
+                    background-color: #ffb338e5;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                }
+
+                span.success {
+                    background-color: #2a9e2a;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                }
+
+                span.danger {
+                    background-color: #fe1c1cdc;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    color: var(--white-color);
+                    border-radius: 5px;
+                    margin: 2px;
+                    align-self: center;
+                    padding: 5px 8px !important;
+                    text-align: center;
+                }
+            }
+            .single-line {
+                text-wrap: nowrap;
+            }
+
+            .notification-view {
+                i {
+                    font-size: 20px;
+                    transition: 0.3s ease-in-out;
+                }
+                i:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.personal-details {
+    h3, label {
+        color: var(--text-color);
+    }
+    
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    textarea {
+        margin-top: 0 !important;
+        height: 120px !important;
+    }
+
+    .left-side, .right-side {
+        .form-group {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .inputtypefile {
+        .inputMSG {
+            span.file-name {
+                all: unset;
+                font-size: 11px;
+                color: var(--text-color);
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-family: "helvetica-regular";
+                font-weight: 400;
+            }
+        }
+    }
+
+}
+
+.reSchedule-datepicker {
+    .rdtPicker {
+        background-color: var(--boxes-color);
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+
+        thead {
+            tr {
+                &:first-of-type {
+                    th {
+                        transition: 0.2s ease-in-out;
+
+                        &:hover {
+                            background-color: var(--primary-color);
+                            color: var(--secondary-100);
+                        }
+                    }
+                }
+            }
+        }
+
+        .rdtTime .rdtSwitch {
+            border: 1px solid var(--text-color);
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: var(--primary-color);
+                color: var(--secondary-100);
+            }
+        }
+
+        .rdtTimeToggle {
+            border: 1px solid var(--text-color);
+        }
+
+        .rdtCounter {
+            .rdtBtn {
+                margin: 1px;
+                width: 35px;
+                height: 35px;
+
+                &:hover {
+                    background-color: var(--primary-color);
+                    color: var(--secondary-100);
+                }
+            }
+        }
+
+        td.rdtActive,
+        td.rdtActive:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-100);
+        }
+
+        td.rdtToday {
+            &:before {
+                border-bottom: 7px solid var(--primary-color);
+            }
+        }
+
+        td.rdtDay:hover,
+        td.rdtHour:hover,
+        td.rdtMinute:hover,
+        td.rdtSecond:hover,
+        .rdtTimeToggle:hover {
+            background: var(--primary-color);
+            color: var(--secondary-100);
+            cursor: pointer;
+        }
+    }
+}
+
+body.dark {
+    .data-table {
+        .table-responsive-xl {
+            table {
+                td {
+                    span.warning {
+                        background-color: #d38a15;
+                    }
+
+                    span.success {
+                        background-color: #056305;
+                    }
+    
+                    span.danger {
+                        background-color: #c11717e5;
+                    }
+                }
+                .single-line {
+                    text-wrap: nowrap;
+                }
+            }
+        }
+    }
+}

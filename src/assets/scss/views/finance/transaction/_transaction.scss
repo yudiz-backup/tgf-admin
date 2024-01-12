@@ -1,0 +1,152 @@
+.data-table {
+    .table-responsive-xl {
+        td {
+            span.link {
+                color: var(--heighLight-text);
+                cursor: pointer;
+                text-wrap: nowrap;
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+
+.transaction-view-modal {
+    .modal-dialog {
+        box-shadow: 0 0 20px 1px #77777738;
+    }
+
+    .modal-header {
+        color: var(--text-color);
+        padding: 15px 35px;
+        width: 100%;
+
+        .modal-title {
+            width: 100%;
+        }
+
+        .modal-title::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: var(--secondary-200);
+        }
+
+        button {
+            background-color: var(--white-color);
+            box-shadow: 0px 0px 30px 0px #2b2b2b50;
+            border-radius: 50%;
+            margin: 0;
+        }
+    }
+
+    .modal-body {
+        padding: 8px 35px 20px !important;
+
+        h4 {
+            color: var(--text-color);
+            text-align: start;
+            font-size: 15px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 12px;
+
+            span {
+                color: var(--text-color);
+                display: block;
+                padding: 5px;
+            }
+
+            span.tag-button,
+            span.success {
+                background-color: #2a9e2a;
+                font-size: 12px;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            span.danger {
+                background-color: #fe1c1cdc;
+                font-size: 12px;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            span.deposit {
+                background-color: #2a9e2a;
+                font-size: 12px;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            span.referral {
+                background-color: #F5A524;
+                font-size: 12px;
+                text-transform: capitalize;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+            }
+
+            span.special {
+                background-color: var(--primary-color);
+                font-size: 12px;
+                text-transform: capitalize;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+            }
+
+            span.welcome {
+                background-color: #7828C8;
+                font-size: 12px;
+                text-transform: capitalize;
+                color: var(--white-color);
+                border-radius: 5px;
+                margin: 2px;
+                align-self: center;
+                padding: 2px 8px !important;
+                text-align: center;
+            }
+
+            .link {
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+
+            .value {
+                text-transform: capitalize;
+            }
+        }
+    }
+}

@@ -1,0 +1,454 @@
+.wrapper {
+
+    .basic-settings,
+    .transaction-settings,
+    .bonus-settings,
+    .tds-settings,
+    .ban-state,
+    .report-title-settings,
+    .invite-settings {
+        .form-group {
+            margin: 0;
+
+            .common-view-input {
+                textarea {
+                    margin: 0 !important;
+                    height: 90px;
+                }
+            }
+        }
+
+        .label {
+            font-size: 20px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+
+    .transaction-settings {
+
+        .withdrawal,
+        .deposit {
+            .label {
+                font-size: 15px;
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .bonus-settings {
+        span.note {
+            font-style: italic;
+            color: rgb(255, 170, 0);
+        }
+    }
+
+    .ban-state {
+        .select__value-container {
+            overflow: hidden;
+            overflow-y: auto;
+            max-height: 60px;
+        }
+        .state {
+            color: var(--text-color);
+            overflow: hidden;
+            height: 180px;
+            margin-top: 30px;
+
+            .wrapper {
+                padding: 15px 20px;
+                box-shadow: 0px 10px 20px rgba(178, 191, 210, 0.25);
+                background-color: var(--secondary-200);
+
+                .state-content {
+                    height: 110px;
+                    font-size: 14px;
+                    overflow-y: auto;
+
+                    td.value {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        // .react-select {
+        //     height: 65px !important;
+        //     overflow: hidden !important;
+        //     overflow-y: auto !important;
+        // }
+
+        button {
+            border-radius: 5px;
+            margin-top: 30px;
+            font-size: 15px;
+            font-family: 'helvetica-bold';
+        }
+    }
+
+    .report-title-settings {
+        .title-content {
+            height: 190px;
+            overflow: hidden;
+            overflow-y: auto;
+
+            tr {
+                display: block;
+                margin: 5px 10px;
+
+                td {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #36bfff;
+                    background-color: #d6f2ff;
+                    border-radius: 5px;
+
+                    .title {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #00a2ff;
+                        font-size: 13px;
+                        font-family: 'helvetica-bold';
+
+                        .cancel {
+                            cursor: pointer;
+                            transition: 0.2s ease-in-out;
+
+                            &:hover {
+                                color: #0059ff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: 'helvetica-bold';
+        }
+    }
+
+    .invite-settings {
+        .invite-profile {
+            .profile {
+                img {
+                    max-width: 200px;
+                    border: 1px solid var(--secondary-300);
+                    padding: 10px 5px;
+                }
+
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        .upload {
+            display: block;
+
+            .upload-button {
+                margin: 0 auto;
+                width: 100px;
+                padding: 0px;
+                position: relative;
+                
+                .inputMSG {
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--white-color);
+
+                    span {
+                        width: 100%;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: var(--white-color);
+                        text-align: center;
+                        background-color: var(--primary-color);
+                        padding: 10px 15px;
+                        border-radius: 50px;
+                    }
+                }
+
+                input {
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 0;
+                    position: absolute;
+                    padding: 0 !important;
+
+                    &:disabled {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .game-version-setting {
+        .data-table {
+
+            h2,
+            .data-table-header {
+                margin: 0;
+                font-size: 20px;
+                text-align: left;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .payment-mode-setting {
+        .top-bar {
+            position: relative;
+            top: 15px;
+            z-index: 100;
+            margin: 0 25px;
+
+            button:hover {
+                border-color: var(--primary-color) !important;
+                background-color: var(--primary-color) !important;
+            }
+        }
+
+        .data-table {
+
+            h2,
+            .data-table-header {
+                margin: 0;
+                font-size: 20px;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .table-responsive-xl {
+                .logo-preview {
+                    img {
+                        object-fit: contain;
+                        height: 55px !important;
+                        min-width: 80px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#edit-version {
+    .modal-header {
+        padding: 20px 35px;
+
+        .edit-version-header {
+            width: 100%;
+            text-transform: capitalize;
+            color: var(--text-color);
+        }
+
+        .edit-version-header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--secondary-300);
+            position: relative;
+        }
+    }
+
+    .modal-body {
+        padding-top: 0;
+        padding-bottom: 10px;
+
+        .form-group {
+            margin: 0;
+
+            .form-label {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .modal-footer {
+        position: relative;
+        bottom: 20px;
+        align-self: flex-end;
+        padding-right: 20px;
+    }
+}
+
+#add-mode {
+    .modal-header {
+        padding: 20px 35px;
+
+        .edit-version-header {
+            width: 100%;
+            text-transform: capitalize;
+            color: var(--text-color);
+        }
+
+        .edit-version-header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--secondary-300);
+            position: relative;
+        }
+    }
+
+    .modal-body {
+        padding-top: 0;
+        padding-bottom: 10px;
+
+        .form-group {
+            margin: 0;
+
+            .form-label {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            textarea {
+                height: 140px;
+            }
+        }
+
+        .fileinput {
+            .inputtypefile {
+                margin: 0;
+                padding: 0;
+                width: 150px;
+
+                .inputMSG {
+                    span {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .document-preview-group {
+                justify-content: start;
+            }
+        }
+    }
+
+    .modal-footer {
+        margin: 10px 0;
+        position: relative;
+        bottom: 20px;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+}
+
+body.dark {
+    .wrapper {
+
+        .basic-settings,
+        .transaction-settings,
+        .bonus-settings,
+        .tds-settings,
+        .ban-state,
+        .report-title-settings,
+        .invite-settings {
+            .label {
+                font-size: 20px;
+                text-align: left;
+                text-transform: uppercase;
+            }
+        }
+
+        .transaction-settings {
+
+            .withdrawal,
+            .deposit {
+                .label {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .bonus-settings {
+            span.note {
+                font-style: italic;
+                color: rgb(222, 149, 1);
+            }
+        }
+
+        .ban-state {
+            .state {
+                .wrapper {
+                    background-color: var(--secondary-600);
+                }
+            }
+
+            .react-select .select__multi-value {
+                background-color: #53acd6 !important;
+            }
+        }
+
+        .report-title-settings {
+            .title-content {
+                tr {
+                    td {
+                        border: 1px solid #36bfff;
+                        background-color: #53acd6;
+
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            color: #b5e4ff;
+                            font-size: 13px;
+                            font-family: 'helvetica-bold';
+
+                            .cancel {
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: #004dd1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                border-radius: 5px;
+                font-size: 15px;
+                font-family: 'helvetica-bold';
+            }
+        }
+    }
+
+
+    #add-mode {
+        .modal-body {
+            .fileinput {
+                .inputtypefile {
+                    .inputMSG {
+                        span {
+                            width: 100%;
+                            background-color: var(--secondary-600);
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-footer {
+            margin: 10px 0;
+            position: relative;
+            bottom: 20px;
+            align-self: flex-start;
+            padding-left: 20px;
+        }
+    }
+}

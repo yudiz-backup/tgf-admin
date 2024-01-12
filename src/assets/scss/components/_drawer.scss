@@ -1,0 +1,55 @@
+.offcanvas {
+  width: 460px;
+  background-color: var(--boxes-color);
+  .offcanvas-header {
+    padding: 15px;
+    button {
+      margin-right: 5px;
+    }
+  }
+  .offcanvas-title {
+    color: var(--text-color);
+    font-size: $fs-20;
+    font-weight: $fw-700;
+  }
+  .offcanvas-body {
+    padding: 15px;
+  }
+  .filter-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    button {
+      padding: 5px 15px;
+      font-size: 14px;
+      border: 1px solid;
+    }
+
+    .reset-button {
+      border-color: var(--secondary-600);
+      &:hover {
+        border-color: var(--secondary-700);
+        background-color: var(--secondary-700);
+      }
+    }
+    .apply-button {
+      border-color: var(--primary-color) !important;
+    }
+
+    .btn.btn-outline-secondary {
+      border-color: var(--secondary-600);
+      color: var(--secondary-200);
+    }
+  }
+}
+
+body.dark {
+  .offcanvas {
+    .filter-button-group {
+      .apply-button {
+        border-color: var(--white-color) !important;
+      }
+    }
+  }
+}

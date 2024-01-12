@@ -1,0 +1,360 @@
+.card-box {
+  margin-bottom: 10px;
+
+  svg.dashboard-card-icon-1 {
+    background: linear-gradient(310deg, #1171ef, #11cdef) !important;
+  }
+
+  svg.dashboard-card-icon-2 {
+    background: linear-gradient(310deg, #d88b06, #f1ef38) !important;
+  }
+
+  svg.dashboard-card-icon-3 {
+    background: linear-gradient(310deg, #01b869, #2dcecc) !important;
+  }
+
+  svg.dashboard-card-icon-4 {
+    background: linear-gradient(310deg, #ff0000, #ff81fc) !important;
+  }
+
+  svg.dashboard-card-icon-5 {
+    background: linear-gradient(310deg, #eb4a4a, #df70e3) !important;
+  }
+
+  svg.dashboard-card-icon-6 {
+    background: linear-gradient(310deg, #f5365c, #f56036) !important;
+  }
+
+  svg.dashboard-card-icon-7 {
+    background: linear-gradient(310deg, #1171ef, #11cdef) !important;
+  }
+
+  svg.dashboard-card-icon-8 {
+    background: linear-gradient(310deg, #2dce89, #2dcecc) !important;
+  }
+
+  svg.dashboard-card-icon-9 {
+    background: linear-gradient(310deg, #eb4a4a, #df70e3) !important;
+  }
+}
+
+.dashboard-filter {
+  .apply-button {
+    border-color: var(--white-color) !important;
+
+    &:disabled {
+      border-color: var(--secondary-500) !important;
+      background-color: var(--text-color);
+    }  
+  }
+
+  .reset-button {
+    margin-left: 10px;
+    background-color: #000000;
+    border-color: #000;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: var(--white-color);
+      border-color: var(--white-color);
+      color: #000 !important;
+    }
+  }
+
+  .datepicker-inputbox {
+    border-color: var(--white-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    &::placeholder {
+      color: var(--white-color);
+    }
+  }
+
+  .react-datepicker__month-container {
+    .react-datepicker__header__dropdown {
+      .react-datepicker__year-read-view {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+      }
+    }
+  }
+}
+
+.dashboard-card-1 {
+  .dash-card {
+    overflow: hidden;
+    height: auto;
+    padding: 0px;
+
+    .up-card-1 {
+      padding: 19px 25px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .currency {
+      word-break: break-word;
+    }
+
+    .down-card-1 {
+      align-content: space-around;
+      padding: 18px 25px !important;
+      align-content: space-around;
+      margin: 25px 0 0;
+      background: linear-gradient(130deg, #00d4ff, #3843e6) !important;
+
+      .card-text {
+        color: var(--white-color) !important;
+      }
+
+      .card-title {
+        margin-bottom: 10px !important;
+        color: var(--white-color) !important;
+      }
+    }
+  }
+}
+
+.dashboard-card-2 {
+  .dash-card {
+    overflow: hidden;
+    height: auto;
+    padding: 0px;
+
+    .up-card-1 {
+      padding: 25px 25px 0;
+    }
+
+    .down-card-1 {
+      align-content: space-around;
+      padding: 18px 25px !important;
+      align-content: space-around;
+      margin: 11px 0 0;
+      background: linear-gradient(130deg, #f1ef38, #955f00) !important;
+
+      .card-text {
+        color: var(--white-color) !important;
+      }
+
+      .card-title {
+        color: var(--white-color) !important;
+      }
+    }
+  }
+}
+
+.dashboard-card-3 {
+  .dash-card {
+    overflow: hidden;
+    height: auto;
+    padding: 0px;
+
+    .up-card-1 {
+      padding: 25px 25px 0;
+    }
+
+    .down-card-1 {
+      align-content: space-around;
+      padding: 18px 25px !important;
+      align-content: space-around;
+      margin: 11px 0 0;
+      background: linear-gradient(130deg, #37cc8c, #005d28) !important;
+
+      .card-text {
+        color: var(--white-color) !important;
+      }
+
+      .card-title {
+        color: var(--white-color) !important;
+      }
+    }
+  }
+}
+
+.dashboard-card-4 {
+  .dash-card {
+    overflow: hidden;
+    height: auto;
+    padding: 0px;
+
+    .up-card-1 {
+      padding: 25px 25px 0;
+    }
+
+    .down-card-1 {
+      align-content: space-around;
+      padding: 18px 25px !important;
+      align-content: space-around;
+      margin: 11px 0 0;
+      background: linear-gradient(130deg, #ff81fc, #961515) !important;
+
+      .card-text {
+        color: var(--white-color) !important;
+      }
+
+      .card-title {
+        color: var(--white-color) !important;
+      }
+    }
+  }
+}
+
+.game-transaction {
+  // max-height: 200px;
+
+  .dash-card3 {
+    .game-content {
+      display: flex;
+      justify-content: space-around;
+      font-size: 11px;
+    }
+  }
+}
+
+.tournament-transaction {
+  // max-height: 240px;
+
+  .dash-card3 {
+    .transaction-table {
+
+      .spin-up-table {
+        font-size: 11px;
+        
+        .title {
+          margin: 10px 0;
+          display: block;
+          text-align: center;
+        }
+      }
+      
+      .mtt-table {
+        font-size: 11px;
+
+        .title {
+          margin: 10px 0;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.poker-card {
+  .dash-card3 {
+    .poker-content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      // margin: 0 10px;
+    }
+  }
+}
+
+.tournament-addOn {
+  .dash-card3 {
+    .addOn-content {
+      display: flex;
+      justify-content: space-around;
+      font-size: 11px;
+    }
+  }
+}
+
+.bot-balance, .profit-card {
+  height: fit-content;
+  max-height: 180px;
+}
+
+.single-line {
+  text-wrap: nowrap;
+}
+
+body.dark {
+  .card-box {
+    margin-bottom: 10px;
+
+    svg.dashboard-card-icon-1 {
+      background: linear-gradient(310deg, #0059cc, #1f99a4) !important;
+    }
+
+    svg.dashboard-card-icon-2 {
+      background: linear-gradient(310deg, #f1ef38, #a56800) !important;
+    }
+
+    svg.dashboard-card-icon-3 {
+      background: linear-gradient(310deg, #37cc8c, #005d28) !important;
+    }
+
+    svg.dashboard-card-icon-4 {
+      background: linear-gradient(310deg, #ff81fc, #bc1212) !important;
+    }
+
+    svg.dashboard-card-icon-5 {
+      background: linear-gradient(310deg, #af4141, #a348a6) !important;
+    }
+
+    svg.dashboard-card-icon-6 {
+      background: linear-gradient(310deg, #971f37, #ba4828) !important;
+    }
+
+    svg.dashboard-card-icon-7 {
+      background: linear-gradient(310deg, #0059cc, #1f99a4) !important;
+    }
+
+    svg.dashboard-card-icon-8 {
+      background: linear-gradient(310deg, #1f8f5f, #239997) !important;
+    }
+
+    svg.dashboard-card-icon-9 {
+      background: linear-gradient(310deg, #af4141, #a348a6) !important;
+    }
+  }
+
+
+.dashboard-filter {
+  .apply-button {
+    border-color: var(--secondary-color) !important;
+
+    &:hover {
+      background-color: var(--white-color);
+      color: var(--primary-color) !important;
+    }
+
+    &:disabled {
+      border-color: var(--secondary-500) !important;
+      background-color: var(--boxes-color);
+    }  
+  }
+
+  .reset-button {
+    background-color: #000000;
+    border-color: #000;
+
+    &:hover {
+      background-color: var(--white-color);
+      border-color: var(--white-color);
+      color: #000 !important;
+    }
+  }
+
+  .datepicker-inputbox {
+    border-color: var(--white-color);
+    background-color: var(--primary-color);
+
+    &::placeholder {
+      color: var(--white-color);
+    }
+  }
+
+  .react-datepicker__month-container {
+    .react-datepicker__header__dropdown {
+      .react-datepicker__year-read-view {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+      }
+    }
+  }
+}
+}
